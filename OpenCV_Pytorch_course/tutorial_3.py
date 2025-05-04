@@ -260,7 +260,7 @@ images, gt_labels = next(iter(val_loader))
 
 rand_idx =random.choice(range(len(images)))
 
-plt.imshow(image[rand_idx].squeeze())
+plt.imshow(images[rand_idx].squeeze())
 plt.title("Ground Truth Label: " + str(int(gt_labels[rand_idx])), fontsize = 12)
 plt.axis("off")
 plt.show()
